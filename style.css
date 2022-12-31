@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    background: url(./img/hous2.gif) no-repeat;
+    background-size: cover;
+}
+
+.snow {
+    background-image: url(./img/snow1.png), url(./img/snow2.png), url(./img/snow3.png);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    animation: snowAni 15s linear infinite;
+}
+
+@keyframes snowAni {
+    0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
